@@ -13,6 +13,7 @@ python main.py
 What is done here:
 
 1. upload a video
-2. during pause you can select objects
-3. play the video - the objects will be tracked.
-4. also you can delete last tracked object
+2. change the presets if needed
+3. start
+4. see the video playing with object detection
+5. check the folder with screenshots
