@@ -146,6 +146,7 @@ class SmartCCTVApp:
             self.root.after(0, lambda s=f"Processed {frame_idx}/{self.total_frames}, saved {saved_count}":
                                    self.status_lbl.config(text=s))
 
+        self.root.after(0, lambda: self.progress.config(value=100))
         self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
         self.root.after(0, lambda: self.start_btn.config(state="normal"))
         self.root.after(0, lambda s=f"Finished: {saved_count} screenshots":
